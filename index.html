@@ -3,280 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aventurero del Código — Ficha de Personaje</title>
-<link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/styles.css">
+<title>joan@dev:~$ portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(6px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .terminal-body > .line-group,
+  .terminal-body > .active-prompt {
+    animation: fadeInUp 0.3s ease both;
+  }
+  .terminal-body > :nth-child(1) { animation-delay: 0.0s; }
+  .terminal-body > :nth-child(2) { animation-delay: 0.1s; }
+  .terminal-body > :nth-child(3) { animation-delay: 0.2s; }
+  .terminal-body > :nth-child(4) { animation-delay: 0.3s; }
+  .terminal-body > :nth-child(5) { animation-delay: 0.4s; }
+  .terminal-body > :nth-child(6) { animation-delay: 0.5s; }
+  .terminal-body > :nth-child(7) { animation-delay: 0.6s; }
+  .terminal-body > :nth-child(8)  { animation-delay: 0.7s; }
+  .terminal-body > :nth-child(9)  { animation-delay: 0.8s; }
+  .terminal-body > :nth-child(10) { animation-delay: 0.9s; }
+  .terminal-body > :nth-child(11) { animation-delay: 1.0s; }
+  .line-wrap { white-space: normal; }
+</style>
 </head>
 <body>
 
-<div class="sheet">
+<div class="scanlines"></div>
 
-  <!-- HEADER -->
-  <div class="header">
-    <div class="sheet-title">✦ Ficha de Personaje — Aventurero del Código ✦</div>
-    <div class="char-name">Alejandro García</div>
-    <div class="char-subtitle">Fullstack Developer · Nivel 4 · Neutral Bueno</div>
+<div class="terminal-wrapper">
+  <div class="title-bar">
+    <div class="title-bar-dots">
+      <span class="tbd tbd-red"></span>
+      <span class="tbd tbd-yellow"></span>
+      <span class="tbd tbd-green"></span>
+    </div>
+    <div class="title-bar-title">joan@dev: ~/portfolio</div>
+    <div class="title-bar-right">bash</div>
   </div>
 
-  <!-- META -->
-  <div class="meta-row">
-    <div class="meta-box">
-      <label>Clase</label>
-      <span>Full-Stack Dev</span>
+  <div class="terminal-body" id="terminal">
+
+    <!-- BOOT -->
+    <div class="line-group boot-seq">
+      <div class="line dim">JoanOS v2.0 — .NET Developer Edition</div>
+      <div class="line dim">Loading modules... <span class="ok">[OK]</span></div>
+      <div class="line dim">ASP.NET MVC ready... <span class="ok">[OK]</span></div>
+      <div class="line">&nbsp;</div>
     </div>
-    <div class="meta-box">
-      <label>Raza</label>
-      <span>Humano Caótico</span>
+
+    <!-- WHOAMI -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> whoami</span>
+      </div>
+      <div class="output-block">
+        <div class="line"><span class="key">Nombre    </span><span class="val">Joan Farres</span></div>
+        <div class="line"><span class="key">Rol       </span><span class="val">Desarrollador .NET · C# MVC</span></div>
+        <div class="line"><span class="key">Ubicación </span><span class="val">España</span></div>
+        <div class="line"><span class="key">Estado    </span><span class="val green-text">Disponible para nuevos proyectos</span></div>
+        <div class="line line-wrap"><span class="key">Bio       </span><span class="val">Desarrollador backend con experiencia en el diseño y construcción de aplicaciones de gestión empresarial complejas. He liderado el desarrollo de CRMs desde cero en el sector médico y de alquiler de vehículos.</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
     </div>
-    <div class="meta-box">
-      <label>Trasfondo</label>
-      <span>Aprendiz Autodidacta</span>
+
+    <!-- CAT SKILLS.TXT -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat skills.txt</span>
+      </div>
+      <div class="output-block">
+        <div class="line comment"># ── Backend ─────────────────────────────────────────</div>
+        <div class="line"><span class="skill-name-t">C# / .NET Framework</span></div>
+        <div class="line"><span class="skill-name-t">ASP.NET MVC</span></div>
+        <div class="line"><span class="skill-name-t">SQL Server</span></div>
+        <div class="line"><span class="skill-name-t">Arquitectura 3 capas</span></div>
+        <div class="line"><span class="skill-name-t">Stored Procedures</span></div>
+        <div class="line comment"># ── Frontend ────────────────────────────────────────</div>
+        <div class="line"><span class="skill-name-t">jQuery / AJAX</span></div>
+        <div class="line"><span class="skill-name-t">jqGrid</span></div>
+        <div class="line"><span class="skill-name-t">Bootstrap / CSS</span></div>
+        <div class="line"><span class="skill-name-t">Razor Views</span></div>
+        <div class="line comment"># ── Tools ───────────────────────────────────────────</div>
+        <div class="line"><span class="skill-name-t">Visual Studio</span></div>
+        <div class="line"><span class="skill-name-t">Git / GitHub</span></div>
+        <div class="line"><span class="skill-name-t">IIS</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
     </div>
-    <div class="meta-box">
-      <label>Bonif. Competencia</label>
-      <span>+2</span>
+
+    <!-- LS PROJECTS -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> ls -la projects/</span>
+      </div>
+      <div class="output-block">
+        <div class="line dim">total 3</div>
+        <div class="line">drwxr-xr-x  joan  staff  <span class="dir">crm-medico/</span></div>
+        <div class="line">drwxr-xr-x  joan  staff  <span class="dir">karve/</span></div>
+        <div class="line">drwxr-xr-x  joan  staff  <span class="dir">snippets/</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
     </div>
+
+    <!-- README crm-medico -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~/projects</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat crm-medico/README.md</span>
+      </div>
+      <div class="output-block project-block">
+        <div class="line"><span class="md-h1"># 🏥 CRM Médico</span></div>
+        <div class="line">&nbsp;</div>
+        <div class="line">Sistema integral de gestion clinica. Pacientes, citas,</div>
+        <div class="line">historial medico, diagnosticos y facturacion. Arquitectura</div>
+        <div class="line">de 3 capas. Grids interactivos con jqGrid y AJAX.</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Stack</span></div>
+        <div class="line"><span class="li">›</span> C# MVC · SQL Server · AJAX · jqGrid · Bootstrap</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Features</span></div>
+        <div class="line"><span class="li">›</span> Gestión de pacientes</div>
+        <div class="line"><span class="li">›</span> Agenda de citas</div>
+        <div class="line"><span class="li">›</span> Historial clínico</div>
+        <div class="line"><span class="li">›</span> Facturación</div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- README karve -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~/projects</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat karve/README.md</span>
+      </div>
+      <div class="output-block project-block">
+        <div class="line"><span class="md-h1"># 🚗 Karve — CRM Alquiler de Coches</span></div>
+        <div class="line">&nbsp;</div>
+        <div class="line">Plataforma empresarial de gestion de alquiler de vehiculos.</div>
+        <div class="line">Arquitectura multicapa con ODBC y stored procedures.</div>
+        <div class="line">Soporte multiidioma.</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Stack</span></div>
+        <div class="line"><span class="li">›</span> ASP.NET MVC · ODBC · Stored Procedures · Bootstrap</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Features</span></div>
+        <div class="line"><span class="li">›</span> Gestión de flota</div>
+        <div class="line"><span class="li">›</span> Contratos</div>
+        <div class="line"><span class="li">›</span> Multiidioma</div>
+        <div class="line"><span class="li">›</span> Stored Procedures</div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- README snippets -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~/projects</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat snippets/README.md</span>
+      </div>
+      <div class="output-block project-block">
+        <div class="line"><span class="md-h1"># 📋 Snippets Hub</span></div>
+        <div class="line">&nbsp;</div>
+        <div class="line">Libreria personal de snippets y patrones reutilizables.</div>
+        <div class="line">Publicada en GitHub como recurso para la comunidad .NET.</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Stack</span></div>
+        <div class="line"><span class="li">›</span> GitHub · C# · jQuery</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Features</span></div>
+        <div class="line"><span class="li">›</span> Patrones MVC en C#</div>
+        <div class="line"><span class="li">›</span> Helpers AJAX / jqGrid</div>
+        <div class="line"><span class="li">›</span> Queries SQL Server optimizadas</div>
+        <div class="line"><span class="li">›</span> <a href="https://github.com/joanfarres" class="link-out" target="_blank">https://github.com/joanfarres</a></div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- CAT EXPERIENCE.TXT -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat experience.txt</span>
+      </div>
+      <div class="output-block">
+        <div class="line"><span class="md-h2">## Desarrollador .NET — Empresa Médica</span></div>
+        <div class="line"><span class="key">Período     </span><span class="val">2022 — actualidad</span></div>
+        <div class="line"><span class="key">Stack       </span><span class="val">C# MVC · SQL Server · jqGrid · AJAX · Bootstrap</span></div>
+        <div class="line"><span class="li">›</span> Desarrollo del CRM médico desde cero con arquitectura 3 capas</div>
+        <div class="line"><span class="li">›</span> Gestión de pacientes, agenda, historial clínico y facturación</div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Desarrollador .NET — Karve</span></div>
+        <div class="line"><span class="key">Período     </span><span class="val">2020 — 2022</span></div>
+        <div class="line"><span class="key">Stack       </span><span class="val">ASP.NET MVC · ODBC · Stored Procedures · Bootstrap</span></div>
+        <div class="line"><span class="li">›</span> Plataforma empresarial de gestión de alquiler de vehículos</div>
+        <div class="line"><span class="li">›</span> Arquitectura multicapa, contratos, flota y soporte multiidioma</div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- CAT EDUCATION.TXT -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat education.txt</span>
+      </div>
+      <div class="output-block">
+        <div class="line"><span class="md-h2">## [Nombre del título o curso]</span></div>
+        <div class="line"><span class="key">Centro      </span><span class="val">[Nombre del centro]</span></div>
+        <div class="line"><span class="key">Año         </span><span class="val">[Año de finalización]</span></div>
+        <div class="line">&nbsp;</div>
+        <div class="line"><span class="md-h2">## Autodidacta</span></div>
+        <div class="line"><span class="li">›</span> .NET / C# — documentación oficial y proyectos en producción</div>
+        <div class="line"><span class="li">›</span> Arquitectura de software — libros y práctica real</div>
+        <div class="line"><span class="li">›</span> GitHub — snippets y recursos para la comunidad .NET</div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- CAT CONTACT.JSON -->
+    <div class="line-group">
+      <div class="prompt-line">
+        <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+        <span class="cmd"> cat contact.json</span>
+      </div>
+      <div class="output-block">
+        <div class="line"><span class="pun">{</span></div>
+        <div class="line">  <span class="json-key">"email"</span><span class="pun">:</span> <span class="json-str">"joan@ejemplo.com"</span><span class="pun">,</span></div>
+        <div class="line">  <span class="json-key">"github"</span><span class="pun">:</span> <span class="json-str"><a href="https://github.com/joanfarres" target="_blank" class="link-out">"github.com/joanfarres"</a></span><span class="pun">,</span></div>
+        <div class="line">  <span class="json-key">"linkedin"</span><span class="pun">:</span> <span class="json-str"><a href="https://linkedin.com/in/joanfarres" target="_blank" class="link-out">"linkedin.com/in/joanfarres"</a></span><span class="pun">,</span></div>
+        <div class="line">  <span class="json-key">"cv"</span><span class="pun">:</span> <span class="json-str"><a href="cv.pdf" target="_blank" class="link-out">"descargar CV.pdf"</a></span><span class="pun">,</span></div>
+        <div class="line">  <span class="json-key">"disponible"</span><span class="pun">:</span> <span class="json-bool">true</span></div>
+        <div class="line"><span class="pun">}</span></div>
+      </div>
+      <div class="line">&nbsp;</div>
+    </div>
+
+    <!-- CURSOR ACTIVO -->
+    <div class="prompt-line active-prompt">
+      <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
+      <span class="cursor-blink">█</span>
+    </div>
+
   </div>
-
-  <!-- MAIN GRID -->
-  <div class="main-grid">
-
-    <!-- ABILITY SCORES -->
-    <div class="abilities">
-      <div class="ability">
-        <span class="ability-name">Fuerza</span>
-        <div class="ability-score">14</div>
-        <div class="ability-mod">+2</div>
-        <span class="ability-sub">Backend</span>
-      </div>
-      <div class="ability">
-        <span class="ability-name">Destreza</span>
-        <div class="ability-score">16</div>
-        <div class="ability-mod">+3</div>
-        <span class="ability-sub">Frontend</span>
-      </div>
-      <div class="ability">
-        <span class="ability-name">Constitución</span>
-        <div class="ability-score">15</div>
-        <div class="ability-mod">+2</div>
-        <span class="ability-sub">Debugging</span>
-      </div>
-      <div class="ability">
-        <span class="ability-name">Inteligencia</span>
-        <div class="ability-score">17</div>
-        <div class="ability-mod">+3</div>
-        <span class="ability-sub">Algoritmos</span>
-      </div>
-      <div class="ability">
-        <span class="ability-name">Sabiduría</span>
-        <div class="ability-score">12</div>
-        <div class="ability-mod">+1</div>
-        <span class="ability-sub">Arquitectura</span>
-      </div>
-      <div class="ability">
-        <span class="ability-name">Carisma</span>
-        <div class="ability-score">13</div>
-        <div class="ability-mod">+1</div>
-        <span class="ability-sub">Work &amp; Team</span>
-      </div>
-    </div>
-
-    <!-- RIGHT COLUMN -->
-    <div class="right-col">
-
-      <!-- HP -->
-      <div class="section">
-        <div class="section-title">Puntos de Golpe</div>
-        <div class="hp-row">
-          <div class="hp-numbers">
-            <div class="hp-current">88</div>
-            <div class="hp-max">/ 100 PG máx.</div>
-          </div>
-          <div style="flex:1">
-            <div class="hp-label">Proyectos completados este año</div>
-            <div class="hp-bar-wrap"><div class="hp-bar-fill"></div></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- SAVING THROWS -->
-      <div class="section">
-        <div class="section-title">Tiradas de Salvación</div>
-        <div class="save-row">
-          <div class="save-box"><div class="save-name">Plazo</div><div class="save-val">+4</div></div>
-          <div class="save-box"><div class="save-name">Bugs</div><div class="save-val">+5</div></div>
-          <div class="save-box"><div class="save-name">Merge</div><div class="save-val">+3</div></div>
-          <div class="save-box"><div class="save-name">Scope</div><div class="save-val">+2</div></div>
-        </div>
-      </div>
-
-      <!-- SKILLS / LANGUAGES -->
-      <div class="section">
-        <div class="section-title">Habilidades &amp; Competencias</div>
-        <div class="skills-grid">
-          <div class="skill-item"><div class="skill-dot expert"></div>Python <span class="skill-bonus">+5</span></div>
-          <div class="skill-item"><div class="skill-dot filled"></div>JavaScript <span class="skill-bonus">+4</span></div>
-          <div class="skill-item"><div class="skill-dot filled"></div>React <span class="skill-bonus">+4</span></div>
-          <div class="skill-item"><div class="skill-dot filled"></div>Node.js <span class="skill-bonus">+3</span></div>
-          <div class="skill-item"><div class="skill-dot expert"></div>Git &amp; GitHub <span class="skill-bonus">+5</span></div>
-          <div class="skill-item"><div class="skill-dot filled"></div>SQL / Postgres <span class="skill-bonus">+3</span></div>
-          <div class="skill-item"><div class="skill-dot"></div>Docker <span class="skill-bonus">+1</span></div>
-          <div class="skill-item"><div class="skill-dot"></div>TypeScript <span class="skill-bonus">+2</span></div>
-        </div>
-        <div class="passive-row">
-          <div class="passive-item"><div class="passive-val">14</div> Percepción Pasiva (Stack Overflow)</div>
-          <div class="passive-item"><div class="passive-val">16</div> Iniciativa (Café ☕)</div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="divider">· · · · ·</div>
-
-  <!-- PROJECTS (Spells) -->
-  <div class="section" style="margin-bottom:16px">
-    <div class="section-title">Conjuros Conocidos — Proyectos Destacados</div>
-    <div class="spell-list">
-      <div class="spell-slot-row">
-        <div class="spell-level">Nivel 3</div>
-        <div class="spell-info">
-          <div class="spell-name">⚔ DungeonTask — App de Gestión RPG</div>
-          <div class="spell-desc">Aplicación web full-stack para gestionar campañas y personajes de D&D. Autenticación JWT, API REST con Node.js y base de datos PostgreSQL.</div>
-          <div class="spell-tags"><span class="tag highlight">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span></div>
-        </div>
-      </div>
-      <div class="spell-slot-row">
-        <div class="spell-level">Nivel 2</div>
-        <div class="spell-info">
-          <div class="spell-name">🔮 PyOracle — Bot de Análisis de Datos</div>
-          <div class="spell-desc">Bot de Telegram que procesa datasets CSV y genera visualizaciones automáticas con pandas y matplotlib.</div>
-          <div class="spell-tags"><span class="tag highlight">Python</span><span class="tag">Pandas</span><span class="tag">Telegram API</span></div>
-        </div>
-      </div>
-      <div class="spell-slot-row">
-        <div class="spell-level">Nivel 2</div>
-        <div class="spell-info">
-          <div class="spell-name">🛡 ShieldAPI — Middleware de Seguridad</div>
-          <div class="spell-desc">Librería npm para sanitización de inputs y rate limiting en APIs Express. 200+ descargas semanales.</div>
-          <div class="spell-tags"><span class="tag highlight">npm</span><span class="tag">Express</span><span class="tag">Open Source</span></div>
-        </div>
-      </div>
-      <div class="spell-slot-row">
-        <div class="spell-level">Nivel 1</div>
-        <div class="spell-info">
-          <div class="spell-name">📜 ScriptBlade — Generador de Scripts</div>
-          <div class="spell-desc">CLI tool en Python para automatizar tareas de devops: backups, deploys y reportes. Usado en entorno real de trabajo.</div>
-          <div class="spell-tags"><span class="tag highlight">Python</span><span class="tag">CLI</span><span class="tag">DevOps</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- BOTTOM GRID -->
-  <div class="bottom-grid">
-
-    <!-- BIO / BACKGROUND -->
-    <div class="section">
-      <div class="section-title">Trasfondo del Personaje</div>
-      <div class="bio-text">
-        Aventurero del código desde los reinos de Madrid. Comencé mi viaje en las Tierras Oscuras del Autoaprendizaje, armado únicamente con un portátil y la determinación de un paladín. He forjado alianzas con equipos ágiles, sobrevivido a múltiples deadlines y salido victorioso de incontables batallas contra bugs legendarios.
-        <br><br>
-        Busco unirme a una partida donde el código limpio, la creatividad y el trabajo en equipo sean los valores del gremio.
-      </div>
-    </div>
-
-    <!-- TRAITS / IDEALS -->
-    <div class="section">
-      <div class="section-title">Rasgos de Personalidad</div>
-      <div class="traits-list">
-        <div class="trait-item"><span class="trait-icon">⚡</span> <strong>Ideal:</strong> El código elegante es la magia más poderosa. Si no lo puedes explicar, no lo entiendes.</div>
-        <div class="trait-item"><span class="trait-icon">🎯</span> <strong>Rasgo:</strong> Obsesionado con la experiencia de usuario. Un clic de más es un fracaso.</div>
-        <div class="trait-item"><span class="trait-icon">🔗</span> <strong>Vínculo:</strong> Contribuidor activo en GitHub. Mi historial de commits es mi grimorio personal.</div>
-        <div class="trait-item"><span class="trait-icon">⚠️</span> <strong>Defecto:</strong> Perfeccionista. A veces refactorizo tres veces antes de subir un commit.</div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- EQUIPMENT -->
-  <div class="section" style="margin-bottom:16px">
-    <div class="section-title">Equipo &amp; Artefactos</div>
-    <div class="equip-grid">
-      <div class="equip-item"><span class="equip-icon">💻</span><div class="equip-name">ThinkPad de Batalla</div></div>
-      <div class="equip-item"><span class="equip-icon">☕</span><div class="equip-name">Poción de Cafeína</div></div>
-      <div class="equip-item"><span class="equip-icon">🐙</span><div class="equip-name">Grimorio GitHub</div></div>
-      <div class="equip-item"><span class="equip-icon">🐧</span><div class="equip-name">Pergamino Linux</div></div>
-      <div class="equip-item"><span class="equip-icon">🎧</span><div class="equip-name">Auriculares del Focus</div></div>
-      <div class="equip-item"><span class="equip-icon">📚</span><div class="equip-name">Clean Code (Reliquia)</div></div>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <div class="section" style="margin-bottom:16px">
-    <div class="section-title">Historial de Aventuras — Experiencia Laboral</div>
-    <div class="guild-list">
-      <div class="guild-item">
-        <div class="guild-dates">2023 — Presente</div>
-        <div class="guild-info">
-          <div class="guild-role">⚔ Mago del Frontend · Junior Developer</div>
-          <div class="guild-name">Gremio TechNova S.L. — Madrid</div>
-          <div class="guild-desc">Desarrollo de interfaces en React para plataforma SaaS B2B. Migración de componentes legacy a TypeScript. Participación activa en sprints ágiles y code reviews semanales.</div>
-        </div>
-      </div>
-      <div class="guild-item">
-        <div class="guild-dates">2022 — 2023</div>
-        <div class="guild-info">
-          <div class="guild-role">🔮 Aprendiz del Stack · Becario Full-Stack</div>
-          <div class="guild-name">Fortaleza Digital Agency — Barcelona</div>
-          <div class="guild-desc">Creación de landing pages y APIs REST en Node.js. Mantenimiento de bases de datos MySQL y automatización de tareas con scripts Python. Primera victoria real contra un bug en producción.</div>
-        </div>
-      </div>
-      <div class="guild-item">
-        <div class="guild-dates">2021 — 2022</div>
-        <div class="guild-info">
-          <div class="guild-role">📜 Escriba del Código · Freelance</div>
-          <div class="guild-name">Aventurero Independiente</div>
-          <div class="guild-desc">Webs para pequeños negocios locales con WordPress y PHP. Primeros proyectos propios con HTML, CSS y JavaScript vanilla. Aprendizaje en solitario desde cero.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="section" style="margin-bottom:16px">
-    <div class="section-title">Pergamino de Invocación — Contacto</div>
-    <div class="contact-grid">
-      <a class="contact-card" href="mailto:alejandro@ejemplo.com">
-        <span class="contact-card-icon">📜</span>
-        <span class="contact-card-label">Correo</span>
-        <span class="contact-card-value">alejandro@ejemplo.com</span>
-      </a>
-      <a class="contact-card" href="https://github.com/alejandro" target="_blank">
-        <span class="contact-card-icon">🐙</span>
-        <span class="contact-card-label">GitHub</span>
-        <span class="contact-card-value">github.com/alejandro</span>
-      </a>
-      <a class="contact-card" href="https://linkedin.com/in/alejandro" target="_blank">
-        <span class="contact-card-icon">💼</span>
-        <span class="contact-card-label">LinkedIn</span>
-        <span class="contact-card-value">linkedin.com/in/alejandro</span>
-      </a>
-    </div>
-  </div>
-
-  <!-- FOOTER XP -->
-  <div class="footer-bar">
-    <div style="font-size:12px; color:var(--ink-light); font-style:italic;">
-      ✦ Disponible para nuevas aventuras · Open to work ✦
-    </div>
-    <div class="xp-box">
-      <div class="xp-label">Experiencia — Próximo Nivel</div>
-      <div class="xp-bar-wrap"><div class="xp-bar-fill"></div></div>
-      <div class="xp-text">6.800 / 10.000 XP — Nivel 4 → 5</div>
-    </div>
-  </div>
-
 </div>
 
 </body>
