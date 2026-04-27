@@ -3,75 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Joan Farres — Desarrollador .NET backend con experiencia en ASP.NET MVC, C#, SQL Server y arquitectura multicapa.">
+    <meta name="author" content="Joan Farres">
+    <meta property="og:title" content="joan@dev:~$ portfolio">
+    <meta property="og:description" content="Portfolio de Joan Farres — Desarrollador .NET backend">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬛</text></svg>">
     <title>joan@dev:~$ portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(6px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .terminal-body > .line-group,
-        .terminal-body > .active-prompt {
-            animation: fadeInUp 0.3s ease both;
-        }
-
-        .terminal-body > :nth-child(1) {
-            animation-delay: 0.0s;
-        }
-
-        .terminal-body > :nth-child(2) {
-            animation-delay: 0.1s;
-        }
-
-        .terminal-body > :nth-child(3) {
-            animation-delay: 0.2s;
-        }
-
-        .terminal-body > :nth-child(4) {
-            animation-delay: 0.3s;
-        }
-
-        .terminal-body > :nth-child(5) {
-            animation-delay: 0.4s;
-        }
-
-        .terminal-body > :nth-child(6) {
-            animation-delay: 0.5s;
-        }
-
-        .terminal-body > :nth-child(7) {
-            animation-delay: 0.6s;
-        }
-
-        .terminal-body > :nth-child(8) {
-            animation-delay: 0.7s;
-        }
-
-        .terminal-body > :nth-child(9) {
-            animation-delay: 0.8s;
-        }
-
-        .terminal-body > :nth-child(10) {
-            animation-delay: 0.9s;
-        }
-
-        .terminal-body > :nth-child(11) {
-            animation-delay: 1.0s;
-        }
-
-        .line-wrap {
-            white-space: normal;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -99,16 +39,13 @@
             </div>
 
             <!-- WHOAMI -->
-            <div class="line-group">
+            <div class="line-group" id="section-whoami">
                 <div class="prompt-line">
                     <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
                     <span class="cmd"> whoami</span>
                 </div>
                 <div class="output-block">
                     <div class="line"><span class="key">Nombre    </span><span class="val">Joan Farres</span></div>
-                    <!--<div class="line"><span class="key">Rol       </span><span class="val">Desarrollador .NET · C# MVC</span></div>-->
-                    <!--<div class="line"><span class="key">Ubicación </span><span class="val">España</span></div>-->
-                    <!--<div class="line"><span class="key">Estado    </span><span class="val green-text">Disponible para nuevos proyectos</span></div>-->
                     <div class="line line-wrap"><span class="key">Bio       </span><span class="val">Desarrollador backend con experiencia en el diseño y construcción de aplicaciones de gestión empresarial complejas. He liderado el desarrollo de CRMs desde cero en el sector médico y de alquiler de vehículos.</span></div>
                 </div>
                 <div class="line">&nbsp;</div>
@@ -136,8 +73,8 @@
                     <div class="line"><span class="skill-name-t">Visual Studio</span></div>
                     <div class="line"><span class="skill-name-t">Git / GitHub</span></div>
                     <div class="line"><span class="skill-name-t">IIS</span></div>
-                    <div class="line comment"># ── Ia ───────────────────────────────────────────</div>
-                    <div class="line"><span class="skill-name-t">Claude</span></div>
+                    <div class="line comment"># ── IA ───────────────────────────────────────────</div>
+                    <div class="line"><span class="skill-name-t">Claude Code / Design</span></div>
                     <div class="line"><span class="skill-name-t">Skills.md</span></div>
                 </div>
                 <div class="line">&nbsp;</div>
@@ -150,25 +87,23 @@
                     <span class="cmd"> cat experience.md</span>
                 </div>
                 <div class="output-block">
-
                     <div class="line"><span class="md-h2">## Desarrollador .NET — Karve</span></div>
                     <div class="line"><span class="key">Período     </span><span class="val">2023 — actualidad</span></div>
-                    <div class="line"><span class="key">Stack       </span><span class="val">ASP.NET MVC · ODBC · Bootstrap</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">C# MVC .NET Framework · ODBC · Bootstrap · jQuery</span></div>
                     <div class="line"><span class="li">›</span> Plataforma empresarial de gestión de alquiler de vehículos</div>
                     <div class="line"><span class="li">›</span> Arquitectura multicapa, contratos, flota y soporte multiidioma</div>
                     <div class="line">&nbsp;</div>
                     <div class="line"><span class="md-h2">## Desarrollador .NET — The Electric Sheep Factory</span></div>
                     <div class="line"><span class="key">Período     </span><span class="val">2017 — 2023</span></div>
-                    <div class="line"><span class="key">Stack       </span><span class="val">ASP.NET MVC · Sql Server · Stored Procedures · Bootstrap</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">C# MVC .NET Framework · Sql Server · Stored Procedures · Bootstrap · jQuery</span></div>
                     <div class="line"><span class="li">›</span> Crm gestion centro medico</div>
                     <div class="line"><span class="li">›</span> Historiales, recetas, agendas</div>
                     <div class="line">&nbsp;</div>
                     <div class="line"><span class="md-h2">## Desarrollador .NET — Quest Initiative</span></div>
                     <div class="line"><span class="key">Período     </span><span class="val">2014 — 2016</span></div>
-                    <div class="line"><span class="key">Stack       </span><span class="val">ASP.NET MVC · ODBC · Stored Procedures · Bootstrap</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">C# MVC .NET Framework · Sql Server · Stored Procedures · Bootstrap · jQuery</span></div>
                     <div class="line"><span class="li">›</span> Plataforma empresarial de gestión de alquiler de vehículos</div>
                     <div class="line"><span class="li">›</span> Arquitectura multicapa, contratos, flota y soporte multiidioma</div>
-
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
@@ -183,11 +118,6 @@
                     <div class="line"><span class="md-h2">## CFGS ASIX – Administració de Sistemes Informàtics en xarxa</span></div>
                     <div class="line"><span class="key">Centro      </span><span class="val">INS Estatut</span></div>
                     <div class="line"><span class="key">Año         </span><span class="val">2015</span></div>
-                    <!--<div class="line">&nbsp;</div>
-            <div class="line"><span class="md-h2">## Autodidacta</span></div>
-            <div class="line"><span class="li">›</span> .NET / C# — documentación oficial y proyectos en producción</div>
-            <div class="line"><span class="li">›</span> Arquitectura de software — libros y práctica real</div>
-            <div class="line"><span class="li">›</span> GitHub — snippets y recursos para la comunidad .NET</div>-->
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
@@ -204,7 +134,6 @@
                     <div class="line">drwxr-xr-x  joan  staff  <span class="dir">crm-medico/</span></div>
                     <div class="line">drwxr-xr-x  joan  staff  <span class="dir">snippets/</span></div>
                     <div class="line">drwxr-xr-x  joan  staff  <span class="dir">timers/</span></div>
-
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
@@ -226,8 +155,8 @@
                     <div class="line"><span class="li">›</span> ASP.NET MVC · ODBC · Stored Procedures · Bootstrap</div>
                     <div class="line">&nbsp;</div>
                     <div class="line"><span class="md-h2">## Features</span></div>
-                    <div class="line"><span class="li">›</span> WWW <a href="https://www.karveinformatica.com/#portfolio" class="link-out" target="_blank">https://www.karveinformatica.com/#portfolio</a></div>
-                    <div class="line"><span class="li">›</span> Youtube <a href="https://www.youtube.com/@karveinformatica8741/videos" class="link-out" target="_blank">https://www.youtube.com/@karveinformatica8741/videos</a></div>
+                    <div class="line"><span class="li">›</span> WWW <a href="https://www.karveinformatica.com/#portfolio" class="link-out" target="_blank" rel="noopener noreferrer">https://www.karveinformatica.com/#portfolio</a></div>
+                    <div class="line"><span class="li">›</span> Youtube <a href="https://www.youtube.com/@karveinformatica8741/videos" class="link-out" target="_blank" rel="noopener noreferrer">https://www.youtube.com/@karveinformatica8741/videos</a></div>
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
@@ -273,13 +202,13 @@
                     <div class="line"><span class="li">›</span> GitHub · JavaScrip · CSS · HTML</div>
                     <div class="line">&nbsp;</div>
                     <div class="line"><span class="md-h2">## Features</span></div>
-                    <div class="line"><span class="li">›</span> WWW <a href="https://jfarres-dev.github.io/Snipets/" class="link-out" target="_blank">https://jfarres-dev.github.io/Snipets/</a></div>
-                    <div class="line"><span class="li">›</span> Repositorio <a href="https://github.com/jfarres-dev/Snipets" class="link-out" target="_blank">https://github.com/jfarres-dev/Snipets</a></div>
+                    <div class="line"><span class="li">›</span> WWW <a href="https://jfarres-dev.github.io/Snipets/" class="link-out" target="_blank" rel="noopener noreferrer">https://jfarres-dev.github.io/Snipets/</a></div>
+                    <div class="line"><span class="li">›</span> Repositorio <a href="https://github.com/jfarres-dev/Snipets" class="link-out" target="_blank" rel="noopener noreferrer">https://github.com/jfarres-dev/Snipets</a></div>
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
 
-            <!-- README timer -->
+            <!-- README timers -->
             <div class="line-group">
                 <div class="prompt-line">
                     <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~/projects</span><span class="prompt-dollar">$</span>
@@ -294,8 +223,8 @@
                     <div class="line"><span class="li">›</span> GitHub · JavaScrip · CSS · HTML</div>
                     <div class="line">&nbsp;</div>
                     <div class="line"><span class="md-h2">## Features</span></div>
-                    <div class="line"><span class="li">›</span> WWW <a href="https://jfarres-dev.github.io/Timers/" class="link-out" target="_blank">https://jfarres-dev.github.io/Timers/</a></div>
-                    <div class="line"><span class="li">›</span> Repositorio <a href="https://github.com/jfarres-dev/Timers" class="link-out" target="_blank">https://github.com/jfarres-dev/Timers</a></div>
+                    <div class="line"><span class="li">›</span> WWW <a href="https://jfarres-dev.github.io/Timers/" class="link-out" target="_blank" rel="noopener noreferrer">https://jfarres-dev.github.io/Timers/</a></div>
+                    <div class="line"><span class="li">›</span> Repositorio <a href="https://github.com/jfarres-dev/Timers" class="link-out" target="_blank" rel="noopener noreferrer">https://github.com/jfarres-dev/Timers</a></div>
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
@@ -309,23 +238,57 @@
                 <div class="output-block">
                     <div class="line"><span class="pun">{</span></div>
                     <div class="line">  <span class="json-key">"email"</span><span class="pun">:</span> <span class="json-str">"jfarres87@gmail.com"</span><span class="pun">,</span></div>
-                    <div class="line">  <span class="json-key">"github"</span><span class="pun">:</span> <span class="json-str"><a href="https://github.com/jfarres-dev" target="_blank" class="link-out">"github.com/jfarres-dev"</a></span><span class="pun">,</span></div>
-                    <div class="line">  <span class="json-key">"linkedin"</span><span class="pun">:</span> <span class="json-str"><a href="https://www.linkedin.com/in/jfarres/" target="_blank" class="link-out">"linkedin.com/in/jfarres/"</a></span><span class="pun">,</span></div>
-                    <!--<div class="line">  <span class="json-key">"cv"</span><span class="pun">:</span> <span class="json-str"><a href="cv.pdf" target="_blank" class="link-out">"descargar CV.pdf"</a></span><span class="pun">,</span></div>-->
-                    <!--<div class="line">  <span class="json-key">"disponible"</span><span class="pun">:</span> <span class="json-bool">true</span></div>-->
+                    <div class="line">  <span class="json-key">"github"</span><span class="pun">:</span> <span class="json-str"><a href="https://github.com/jfarres-dev" target="_blank" rel="noopener noreferrer" class="link-out">"github.com/jfarres-dev"</a></span><span class="pun">,</span></div>
+                    <div class="line">  <span class="json-key">"linkedin"</span><span class="pun">:</span> <span class="json-str"><a href="https://www.linkedin.com/in/jfarres/" target="_blank" rel="noopener noreferrer" class="link-out">"linkedin.com/in/jfarres/"</a></span></div>
                     <div class="line"><span class="pun">}</span></div>
                 </div>
                 <div class="line">&nbsp;</div>
             </div>
 
-            <!-- CURSOR ACTIVO -->
-            <div class="prompt-line active-prompt">
+            <!-- TERMINAL INTERACTIVO -->
+            <div class="line comment section-hint"># terminal interactivo — escribe <span class="ok">help</span> para ver los comandos</div>
+            <div id="interactive-output"></div>
+            <div class="prompt-line active-prompt" id="interactive-prompt">
                 <span class="prompt-user">joan</span><span class="prompt-at">@</span><span class="prompt-host">dev</span><span class="prompt-colon">:</span><span class="prompt-path">~</span><span class="prompt-dollar">$</span>
-                <span class="cursor-blink">█</span>
+                <span id="typed-text" class="cmd"></span><span class="cursor-blink" id="terminal-cursor">█</span>
+            </div>
+            <input type="text" id="terminal-input" class="terminal-hidden-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+
+            <div id="section-learning" class="hidden">
+                <div class="output-block">
+                    <div class="line comment"># ── Actualmente aprendiendo ─────────────────────────</div>
+                    <div class="line"><span class="skill-name-t">IA / LLMs</span>         <span class="val">integración y uso de modelos (Claude, APIs)</span></div>
+                    <div class="line"><span class="skill-name-t">Supabase</span>           <span class="val">backend as a service, PostgreSQL, auth</span></div>
+                    <div class="line"><span class="skill-name-t">Python</span>             <span class="val">scripting y automatización <span class="dim">(en progreso)</span></span></div>
+                </div>
+            </div>
+
+            <div id="conten-extra" class="hidden">
+                <div class="output-block project-block">
+                    <div class="line"><span class="md-h1"># 📦 Proyectos Adicionales</span></div>
+                    <div class="line">&nbsp;</div>
+                    <div class="line"><span class="md-h2">## ⚡ Deploy Manager</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">Python</span></div>
+                    <div class="line"><span class="li">›</span> Herramienta de escritorio para automatizar despliegues</div>
+                    <div class="line"><span class="li">›</span> ASP.NET MVC (.NET Framework) desde GitHub a IIS</div>
+                    <div class="line">&nbsp;</div>
+                    <div class="line"><span class="md-h2">## 🎲 DmTools — Panel D&D 5e</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">C# MVC · SQL Server · AJAX · jqGrid</span></div>
+                    <div class="line"><span class="li">›</span> Panel centralizado para Dungeon Masters</div>
+                    <div class="line"><span class="li">›</span> Gestión de personajes, campañas, bastiones y misiones</div>
+                    <div class="line"><span class="li">›</span> Tienda, tablas D100, pociones, mesa de sonido</div>
+                    <div class="line"><span class="li">›</span> Grimorio, generador de pergaminos y asistente IA integrado</div>
+                    <div class="line">&nbsp;</div>
+                    <div class="line"><span class="md-h2">## 🌐 web Otakurubi</span></div>
+                    <div class="line"><span class="key">Stack       </span><span class="val">HTML · CSS · GitHub Pages</span></div>
+                    <div class="line"><span class="li">›</span> Página web de la asociación OTKR</div>
+                    <div class="line"><span class="li">›</span> WWW <a href="https://otakurubi.org/" class="link-out" target="_blank" rel="noopener noreferrer">https://otakurubi.org/</a></div>
+                </div>
             </div>
 
         </div>
     </div>
 
+    <script src="assets/js/terminal.js"></script>
 </body>
 </html>

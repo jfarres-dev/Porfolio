@@ -100,7 +100,7 @@ body::before {
 /* ── TERMINAL BODY ── */
 .terminal-body {
   padding: 24px 28px 32px;
-  overflow-x: auto;
+  overflow-x: hidden;
 }
 
 /* ── LINES ── */
@@ -108,10 +108,13 @@ body::before {
   font-size: 13px;
   line-height: 1.7;
   color: var(--white);
-  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 .line.dim { color: var(--dim); }
 .line.comment { color: var(--comment); }
+.line-wrap { white-space: normal; }
 
 .line-group { margin-bottom: 4px; }
 
@@ -119,6 +122,7 @@ body::before {
 .prompt-line {
   display: flex;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: 0;
   font-size: 13px;
   line-height: 1.7;
@@ -141,6 +145,7 @@ body::before {
 .key {
   color: var(--cyan);
   white-space: pre;
+  flex-shrink: 0;
 }
 .val { color: var(--white); }
 .green-text { color: var(--green); }
@@ -211,8 +216,51 @@ body::before {
   50% { opacity: 0; }
 }
 
+/* ── ANIMATIONS ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.terminal-body > .line-group,
+.terminal-body > .active-prompt {
+  animation: fadeInUp 0.3s ease both;
+}
+
+.terminal-body > :nth-child(1)  { animation-delay: 0.0s; }
+.terminal-body > :nth-child(2)  { animation-delay: 0.1s; }
+.terminal-body > :nth-child(3)  { animation-delay: 0.2s; }
+.terminal-body > :nth-child(4)  { animation-delay: 0.3s; }
+.terminal-body > :nth-child(5)  { animation-delay: 0.4s; }
+.terminal-body > :nth-child(6)  { animation-delay: 0.5s; }
+.terminal-body > :nth-child(7)  { animation-delay: 0.6s; }
+.terminal-body > :nth-child(8)  { animation-delay: 0.7s; }
+.terminal-body > :nth-child(9)  { animation-delay: 0.8s; }
+.terminal-body > :nth-child(10) { animation-delay: 0.9s; }
+.terminal-body > :nth-child(11) { animation-delay: 1.0s; }
+
+/* ── UTILITIES ── */
+.hidden { display: none; }
+
+.section-hint { margin-top: 12px; }
+
+.terminal-hidden-input {
+  position: fixed;
+  left: -9999px;
+  top: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+/* ── RESPONSIVE ── */
 @media (max-width: 600px) {
-  .terminal-body { padding: 16px; }
+  .terminal-body { padding: 16px 14px; }
   .bar-wrap { width: 80px; }
   .line, .prompt-line { font-size: 11px; }
+  .key { white-space: normal; }
+}
+
+@media (max-width: 400px) {
+  .line, .prompt-line { font-size: 10px; }
 }
